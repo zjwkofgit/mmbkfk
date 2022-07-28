@@ -36,6 +36,12 @@ public class TestController {
         return "hi-zjw";
     }
 
+    @RequestMapping("/hello")
+    public String hello(){
+        log.info("hello");
+        return "hello-zjw";
+    }
+
     @RequestMapping("/sw")
     public String sendWebsocketMsg(){
         log.info("sendWebsocketMsg");
